@@ -31,8 +31,8 @@ public class OperationConsumerController {
     }
     
      @ApiResponses({@ApiResponse(code = 200, message = "Operation OK", response = Operation.class, responseHeaders = {@ResponseHeader(name = "x-myheader", description = "test header", response = String.class)})})
-    @GetMapping(value = "/substraction")
-    public int getSubstraction(@RequestParam int number1, @RequestParam int number2) {
+    @GetMapping(value = "/substraction2")
+    public int getSubstraction2(@RequestParam int number1, @RequestParam int number2) {
         return doSubstraction(number1, number2);
     }
 }
