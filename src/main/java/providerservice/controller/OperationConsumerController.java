@@ -29,4 +29,10 @@ public class OperationConsumerController {
     public int getSubstraction(@RequestParam int number1, @RequestParam int number2) {
         return doSubstraction(number1, number2);
     }
+    
+     @ApiResponses({@ApiResponse(code = 200, message = "Operation OK", response = Operation.class, responseHeaders = {@ResponseHeader(name = "x-myheader", description = "test header", response = String.class)})})
+    @GetMapping(value = "/substraction")
+    public int getSubstraction(@RequestParam int number1, @RequestParam int number2) {
+        return doSubstraction(number1, number2);
+    }
 }
