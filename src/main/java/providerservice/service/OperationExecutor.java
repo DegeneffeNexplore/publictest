@@ -22,7 +22,20 @@ public class OperationExecutor {
         }
         return op;
     }
+  public Operation executeOperation2(Operation op, String operationType) throws Exception{
+        switch (operationType) {
+            case "addition":
+                runAddition(op);
+                break;
+            case "substraction":
+                runSubstraction(op);
+                break;
+            default:
+                throw new Exception("Not supported operation");
 
+        }
+        return op;
+    }
     private void runSubstraction(Operation op) {
         op.setResult(doSubstraction(op.getNumber1(), op.getNumber2()));
     }
