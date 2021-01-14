@@ -35,7 +35,7 @@ public class MagicStringController {
     })
     @PostMapping(value = "/magicstring")
     public ResponseEntity<MagicString> postMagicString(@RequestBody MagicString magicString){
-        return ResponseEntity.status(200)
+        return ResponseEntity.status(201)
                 .body(magicString);
     }
 }
