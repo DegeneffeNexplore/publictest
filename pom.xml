@@ -15,7 +15,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <springboot.version>2.2.1.RELEASE</springboot.version>
+        <springboot.version>2.5.12</springboot.version>
         <karate.version>0.9.0</karate.version>
         <jacoco.version>0.8.2</jacoco.version>
     </properties>
